@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +8,65 @@
 </head>
 <body>
 
-    <header>
-        <img class="banner" src="./Img/Pascoa 6.jpg" alt="">
-    <div class="container-topo">
-        <input type="text" id="busca" placeholder="🔎 Buscar">
-        <div class="carrinho">🛒 <span id="contador">0</span></div>
-    </div>
+    <header class="site-header">
+        <div class="container header-top">
+                <span class="brand-text">Loja de Páscoa</span>
+
+            <nav class="main-nav" role="navigation" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <form class="search" action="#" role="search">
+                    <input type="search" placeholder="Buscar ovos" aria-label="Buscar">
+                </form>
+            </div>
+        </div>
+
+        <div class="hero">
+            <h2>Delícias que conquistam e fazem de cada pedaço uma experiência inesquecível.</h2>
+            <p>Chocolate de verdade, com qualidade e sabor que você percebe na primeira mordida.</p>
+            <a class="btn-primary" href="#">Ver produtos</a>
+        </div>
     </header>
 
-    <main>
+    <main id="main">
+        <section class="products container" aria-label="Produtos em destaque">
+            <h2>Produtos em destaque</h2>
+            <div class="product-grid">
+                <article class="product">
+                    <div class="product-image" aria-hidden="true">🍫</div>
+                    <h3>Ovo de Chocolate</h3>
+                    <p class="price">R$ 39,90</p>
+                    <button class="add-cart">Adicionar</button>
+                </article>
 
+                <article class="product">
+                    <div class="product-image" aria-hidden="true">🐣</div>
+                    <h3>Cesta de Páscoa</h3>
+                    <p class="price">R$ 79,90</p>
+                    <button class="add-cart">Adicionar</button>
+                </article>
+
+                <article class="product">
+                    <div class="product-image" aria-hidden="true">🎁</div>
+                    <h3>Caixa Presente</h3>
+                    <p class="price">R$ 59,90</p>
+                    <button class="add-cart">Adicionar</button>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        <div class="container">
+            <p>&copy; Loja de Páscoa</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
