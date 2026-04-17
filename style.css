@@ -34,7 +34,7 @@ img{
     object-fit: cover;
 }
 
-.site-header{
+.cabecalho{
     background: radial-gradient(circle at top left, rgba(255, 170, 0, 0.12), transparent 25%),
                 radial-gradient(circle at top right, rgba(255,255,255,0.08), transparent 18%),
                 linear-gradient(180deg, #4d2f20 0%, #2b140c 100%);
@@ -43,7 +43,7 @@ img{
     overflow: hidden;
 }
 
-.site-header::after{
+.cabecalho::after{
     content: '';
     position: absolute;
     inset: 0;
@@ -53,7 +53,7 @@ img{
     pointer-events: none;
 }
 
-.header-top{
+.topo{
     position: relative;
     z-index: 1;
     display: flex;
@@ -63,7 +63,7 @@ img{
     padding: 30px 0 0;
 }
 
-.brand{
+.marca{
     display: inline-flex;
     align-items: center;
     gap: 12px;
@@ -73,7 +73,7 @@ img{
     font-size: 1.1rem;
 }
 
-.brand-icon{
+.marca-icone{
     display: inline-flex;
     width: 40px;
     height: 40px;
@@ -84,25 +84,25 @@ img{
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
 }
 
-.main-nav ul{
+.nav-principal ul{
     display: flex;
     gap: 30px;
     list-style: none;
 }
 
-.main-nav a{
+.nav-principal a{
     text-decoration: none;
     color: rgba(255,255,255,0.85);
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
-.main-nav a:hover,
-.main-nav a:focus{
+.nav-principal a:hover,
+.nav-principal a:focus{
     color: #f9e4a6;
 }
 
-.cart-link{
+.carrinho{
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -116,7 +116,7 @@ img{
     background: rgba(255,255,255,0.05);
 }
 
-.cart-badge{
+.badge-carrinho{
     position: absolute;
     top: -6px;
     right: -6px;
@@ -131,7 +131,7 @@ img{
     font-weight: 700;
 }
 
-.hero{
+.destaque{
     position: relative;
     z-index: 1;
     display: grid;
@@ -141,11 +141,11 @@ img{
     padding: 80px 0 60px;
 }
 
-.hero-copy{
+.destaque-texto{
     max-width: 540px;
 }
 
-.eyebrow{
+.subtitulo{
     display: inline-block;
     margin-bottom: 22px;
     color: #d4b35d;
@@ -154,67 +154,36 @@ img{
     font-size: 0.8rem;
 }
 
-.hero-copy h1{
+.destaque-texto h1{
     font-family: 'Playfair Display', serif;
-    font-size: clamp(3rem, 4vw, 5.2rem);
-    line-height: 1.02;
+    /* aumentado para ficar mais impactante como na imagem */
+    font-size: clamp(3.6rem, 6vw, 8rem);
+    line-height: 0.95;
     margin-bottom: 24px;
     color: #fff;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    word-break: break-word;
 }
 
-.hero-copy h1 span{
+.destaque-texto h1 span{
+    /* transforma a palavra em bloco, aumenta e aplica o estilo dourado/itálico */
+    display: block;
     color: #d4b35d;
     font-style: italic;
+    font-weight: 800;
+    font-size: 1.08em;
+    transform: translateY(6px);
+    font-family: 'Playfair Display', serif;
 }
 
-.hero-copy p{
-    color: rgba(255,255,255,0.84);
-    max-width: 600px;
-    margin-bottom: 32px;
-    font-size: 1rem;
-}
-
-.hero-actions{
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-}
-
-.btn{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 32px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn:hover,
-.btn:focus{
-    transform: translateY(-1px);
-}
-
-.btn-primary{
-    background: #d4b35d;
-    color: #2b140c;
-    box-shadow: 0 20px 45px rgba(212,179,93,0.18);
-}
-
-.btn-secondary{
-    border: 1px solid rgba(255,255,255,0.85);
-    color: #fff;
-    background: transparent;
-}
-
-.hero-visual{
+.destaque-imagem{
     border-radius: 36px;
     overflow: hidden;
     box-shadow: 0 40px 90px rgba(0,0,0,0.3);
 }
 
-.hero-visual img{
+.destaque-imagem img{
     width: 100%;
     height: auto;
     display: block;
@@ -243,7 +212,7 @@ img{
     margin-bottom: 24px;
 }
 
-.product-grid{
+.grelha-produtos{
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 22px;
@@ -258,7 +227,7 @@ img{
     backdrop-filter: blur(6px);
 }
 
-.produto-img{
+.img-produto{
     font-size: 42px;
     margin-bottom: 18px;
 }
@@ -269,13 +238,13 @@ img{
     color: #f9f0dd;
 }
 
-.price{
+.preco{
     color: #d4b35d;
     font-weight: 700;
     margin-bottom: 18px;
 }
 
-.add-cart{
+.adicionar-carrinho{
     padding: 12px 20px;
     border-radius: 999px;
     border: none;
@@ -285,8 +254,36 @@ img{
     transition: background-color 0.2s ease;
 }
 
-.add-cart:hover{
+.adicionar-carrinho:hover{
     background: rgba(212,179,93,0.26);
+}
+
+.botao{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botao:hover,
+.botao:focus{
+    transform: translateY(-1px);
+}
+
+.botao-principal{
+    background: #d4b35d;
+    color: #2b140c;
+    box-shadow: 0 20px 45px rgba(212,179,93,0.18);
+}
+
+.botao-secundario{
+    border: 1px solid rgba(255,255,255,0.85);
+    color: #fff;
+    background: transparent;
 }
 
 footer{
@@ -296,66 +293,66 @@ footer{
     color: rgba(255,255,255,0.8);
 }
 
-.footer-content{
+.rodape-conteudo{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-bottom: 40px;
 }
 
-.footer-section h4{
+.secao-rodape h4{
     color: #d4b35d;
     font-size: 1.1rem;
     margin-bottom: 20px;
     font-weight: 600;
 }
 
-.footer-section p{
+.secao-rodape p{
     margin-bottom: 15px;
     line-height: 1.6;
 }
 
-.footer-section ul{
+.secao-rodape ul{
     list-style: none;
     padding: 0;
 }
 
-.footer-section li{
+.secao-rodape li{
     margin-bottom: 8px;
 }
 
-.footer-section a{
+.secao-rodape a{
     color: rgba(255,255,255,0.8);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.footer-section a:hover{
+.secao-rodape a:hover{
     color: #d4b35d;
 }
 
-.social-links{
+.redes-sociais{
     display: flex;
     gap: 15px;
     margin-top: 20px;
 }
 
-.social-links a{
+.redes-sociais a{
     font-size: 1.5rem;
     transition: transform 0.2s ease;
 }
 
-.social-links a:hover{
+.redes-sociais a:hover{
     transform: scale(1.1);
 }
 
-.newsletter{
+.boletim{
     display: flex;
     gap: 10px;
     margin-top: 15px;
 }
 
-.newsletter input{
+.boletim input{
     flex: 1;
     padding: 10px 15px;
     border: 1px solid rgba(255,255,255,0.2);
@@ -365,11 +362,11 @@ footer{
     font-size: 0.9rem;
 }
 
-.newsletter input::placeholder{
+.boletim input::placeholder{
     color: rgba(255,255,255,0.6);
 }
 
-.newsletter button{
+.boletim button{
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
@@ -380,60 +377,60 @@ footer{
     transition: background-color 0.2s ease;
 }
 
-.newsletter button:hover{
+.boletim button:hover{
     background: #c4a34d;
 }
 
-.footer-bottom{
+.rodape-baixo{
     border-top: 1px solid rgba(255,255,255,0.08);
     padding-top: 30px;
     text-align: center;
     color: rgba(255,255,255,0.6);
 }
 
-.footer-bottom p{
+.rodape-baixo p{
     margin: 5px 0;
     font-size: 0.9rem;
 }
 
 @media (max-width: 768px){
-    .footer-content{
+    .rodape-conteudo{
         grid-template-columns: 1fr;
         gap: 30px;
     }
 
-    .newsletter{
+    .boletim{
         flex-direction: column;
     }
 
-    .newsletter button{
+    .boletim button{
         width: 100%;
     }
 }
 
 @media (max-width: 1000px){
-    .hero{
+    .destaque{
         grid-template-columns: 1fr;
     }
 
-    .hero-visual{
+    .destaque-imagem{
         max-width: 680px;
         margin: 0 auto;
     }
 
-    .product-grid{
+    .grelha-produtos{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 820px){
-    .header-top{
+    .topo{
         flex-direction: column;
         align-items: stretch;
         gap: 18px;
     }
 
-    .main-nav ul{
+    .nav-principal ul{
         flex-wrap: wrap;
         justify-content: center;
         gap: 18px;
@@ -441,20 +438,20 @@ footer{
 }
 
 @media (max-width: 640px){
-    .hero-copy h1{
+    .destaque-texto h1{
         font-size: 2.8rem;
     }
 
-    .hero-actions{
+    .destaque-acoes{
         flex-direction: column;
         align-items: stretch;
     }
 
-    .btn{
+    .botao{
         width: 100%;
     }
 
-    .product-grid{
+    .grelha-produtos{
         grid-template-columns: 1fr;
     }
 }
