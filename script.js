@@ -1,25 +1,25 @@
 const produtosArray = [
-  { id: 1, titulo: 'Ovo Clássico', precoText: 'R$ 39,90', preco: 39.90, imagem: 'img/Produto1.avif', alt: '' },
-  { id: 2, titulo: 'Ovo Trufado', precoText: 'R$ 45,90', preco: 45.90, imagem: 'img/Produto2.png', alt: '' },
-  { id: 3, titulo: 'Ovo de Brigadeiro', precoText: 'R$ 49,90', preco: 49.90, imagem: 'img/Produto3.png', alt: '' },
-  { id: 4, titulo: 'Ovo Crocante', precoText: 'R$ 44,90', preco: 44.90, imagem: 'img/Produto4.png', alt: '' },
-  { id: 5, titulo: 'Ovo de Avelã', precoText: 'R$ 52,90', preco: 52.90, imagem: 'img/Produto5.png', alt: '' },
-  { id: 6, titulo: 'Ovo Meio Amargo', precoText: 'R$ 46,90', preco: 46.90, imagem: 'img/Produto6.png', alt: '' },
-  { id: 7, titulo: 'Ovo Branco', precoText: 'R$ 42,90', preco: 42.90, imagem: 'img/Produto7.png', alt: '' },
-  { id: 8, titulo: 'Ovo com Nozes', precoText: 'R$ 55,90', preco: 55.90, imagem: 'img/Produto8.png', alt: '' },
-  { id: 9, titulo: 'Cesta de Páscoa', precoText: 'R$ 79,90', preco: 79.90, imagem: 'img/Produto1.avif', alt: '' },
-  { id: 10, titulo: 'Cesta Familiar', precoText: 'R$ 99,90', preco: 99.90, imagem: 'img/Produto2.png', alt: '' },
-  { id: 11, titulo: 'Cesta Deluxe', precoText: 'R$ 119,90', preco: 119.90, imagem: 'img/Produto3.png', alt: '' },
-  { id: 12, titulo: 'Cesta de Luxo', precoText: 'R$ 139,90', preco: 139.90, imagem: 'img/Produto4.png', alt: '' },
-  { id: 13, titulo: 'Caixa Presente', precoText: 'R$ 59,90', preco: 59.90, imagem: 'img/Produto5.png', alt: '' },
-  { id: 14, titulo: 'Caixa Gourmet', precoText: 'R$ 69,90', preco: 69.90, imagem: 'img/Produto6.png', alt: '' },
-  { id: 15, titulo: 'Caixa Amor', precoText: 'R$ 64,90', preco: 64.90, imagem: 'img/Produto7.png', alt: '' },
-  { id: 16, titulo: 'Caixa Celebration', precoText: 'R$ 74,90', preco: 74.90, imagem: 'img/Produto8.png', alt: '' },
-  { id: 17, titulo: 'Ovo de Morango', precoText: 'R$ 48,90', preco: 48.90, imagem: 'img/Produto1.avif', alt: '' },
-  { id: 18, titulo: 'Ovo de Coco', precoText: 'R$ 47,90', preco: 47.90, imagem: 'img/Produto2.png', alt: '' },
-  { id: 19, titulo: 'Ovo Caramelo', precoText: 'R$ 49,90', preco: 49.90, imagem: 'img/Produto3.png', alt: '' },
-  { id: 20, titulo: 'Ovo Brigadeiro', precoText: 'R$ 54,90', preco: 54.90, imagem: 'img/Produto4.png', alt: '' }
-];
+  { id: 1, titulo: 'Ferreiro Roche', precoText: 'R$ 39,90', preco: 39.90, imagem: 'img/Produto1.avif', alt: '' },
+  { id: 2, titulo: 'KitKat', precoText: 'R$ 45,90', preco: 45.90, imagem: 'img/Produto2.png', alt: '' },
+  { id: 3, titulo: 'Sonho de Valsa', precoText: 'R$ 49,90', preco: 49.90, imagem: 'img/Produto3.png', alt: '' },
+  { id: 4, titulo: 'Kinder ovo', precoText: 'R$ 44,90', preco: 44.90, imagem: 'img/Produto4.png', alt: '' },
+  { id: 5, titulo: 'Chocolate meio a meio', precoText: 'R$ 52,90', preco: 52.90, imagem: 'img/Produto5.png', alt: '' },
+  { id: 6, titulo: 'Diamante negro', precoText: 'R$ 46,90', preco: 46.90, imagem: 'img/Produto6.png', alt: '' },
+  { id: 7, titulo: 'Cookie', precoText: 'R$ 42,90', preco: 42.90, imagem: 'img/Produto7.png', alt: '' },
+  { id: 8, titulo: 'Ovo do Naruto', precoText: 'R$ 55,90', preco: 55.90, imagem: 'img/Produto8.png', alt: '' },
+  { id: 9, titulo: 'Ferreiro Roche2', precoText: 'R$ 79,90', preco: 79.90, imagem: 'img/Produto1.avif', alt: '' },
+  { id: 10, titulo: 'KitKat2', precoText: 'R$ 99,90', preco: 99.90, imagem: 'img/Produto2.png', alt: '' },
+  { id: 11, titulo: 'Sonho de Valsa2', precoText: 'R$ 119,90', preco: 119.90, imagem: 'img/Produto3.png', alt: '' },
+  { id: 12, titulo: 'Kinder ovo2', precoText: 'R$ 139,90', preco: 139.90, imagem: 'img/Produto4.png', alt: '' },
+  { id: 13, titulo: 'Chocolate meio a meio2', precoText: 'R$ 59,90', preco: 59.90, imagem: 'img/Produto5.png', alt: '' },
+  { id: 14, titulo: 'Diamante negro2', precoText: 'R$ 69,90', preco: 69.90, imagem: 'img/Produto6.png', alt: '' },
+  { id: 15, titulo: 'Cookie2', precoText: 'R$ 64,90', preco: 64.90, imagem: 'img/Produto7.png', alt: '' },
+  { id: 16, titulo: 'Ovo do Naruto2', precoText: 'R$ 74,90', preco: 74.90, imagem: 'img/Produto8.png', alt: '' },
+  { id: 17, titulo: 'Ferreiro Roche3', precoText: 'R$ 48,90', preco: 48.90, imagem: 'img/Produto1.avif', alt: '' },
+  { id: 18, titulo: 'KitKat3', precoText: 'R$ 47,90', preco: 47.90, imagem: 'img/Produto2.png', alt: '' },
+  { id: 19, titulo: 'Sonho de Valsa3', precoText: 'R$ 49,90', preco: 49.90, imagem: 'img/Produto3.png', alt: '' },
+  { id: 20, titulo: 'Kinder ovo3', precoText: 'R$ 54,90', preco: 54.90, imagem: 'img/Produto4.png', alt: '' }
+];  
 
 function renderProdutos(array) {
   const grid = document.querySelector('.grelha-produtos');

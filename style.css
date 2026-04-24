@@ -9,6 +9,7 @@ body{
     background: #28150e;
     color: #f3ece4;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 img{
