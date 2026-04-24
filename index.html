@@ -16,6 +16,12 @@
             <a class="marca" href="#">
                 <span class="brand-text">Striking Egg</span>
             </a>
+
+            <!-- search form -->
+            <form class="search-form" role="search" aria-label="Busca de produtos">
+                <input class="search-input" type="search" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+            </form>
+
             <nav class="nav-principal" role="navigation" aria-label="Menu principal">
                 <ul>
                     <li><a href="#">Início</a></li>
@@ -24,7 +30,7 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
-            <a class="carrinho" href="#" aria-label="Carrinho de compras">
+            <a class="carrinho" href="#" aria-label="Carrinho de compras" id="cart-toggle">
                 <span class="cart-icon">🛒</span>
                 <span class="badge-carrinho">0</span>
             </a>
@@ -42,150 +48,25 @@
         </div>
     </header>
 
+    <!-- Drawer do carrinho -->
+    <aside class="carrinho-drawer" id="cart-drawer" aria-hidden="true">
+        <div class="carrinho-drawer-inner">
+            <header class="carrinho-drawer-header">
+                <h3>Seu Carrinho</h3>
+                <button id="cart-close" aria-label="Fechar carrinho">✕</button>
+            </header>
+            <ul class="cart-items" id="cart-items" aria-live="polite"></ul>
+            <div class="cart-footer">
+                <div class="cart-total">Total: R$ <span id="cart-total">0.00</span></div>
+                <button id="cart-checkout" class="botao botao-principal">Finalizar compra</button>
+            </div>
+        </div>
+    </aside>
+
     <main id="main">
         <section class="products container" aria-label="Produtos em destaque">
             <h2>Produtos em destaque</h2>
             <div class="grelha-produtos">
-                
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto1.avif" alt="" />
-                    <h3>Ovo Clássico</h3>
-                    <p class="preco">R$ 39,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto2.png" alt="" />
-                    <h3>Ovo Trufado</h3>
-                    <p class="preco">R$ 45,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto3.png" alt="" />
-                    <h3>Ovo de Brigadeiro</h3>
-                    <p class="preco">R$ 49,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto4.png" alt="" />
-                    <h3>Ovo Crocante</h3>
-                    <p class="preco">R$ 44,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto5.png" alt="" />
-                    <h3>Ovo de Avelã</h3>
-                    <p class="preco">R$ 52,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto6.png" alt="" />
-                    <h3>Ovo Meio Amargo</h3>
-                    <p class="preco">R$ 46,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto7.png" alt="" />
-                    <h3>Ovo Branco</h3>
-                    <p class="preco">R$ 42,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto8.png" alt="" />
-                    <h3>Ovo com Nozes</h3>
-                    <p class="preco">R$ 55,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto9.png" alt="" />
-                    <h3>Cesta de Páscoa</h3>
-                    <p class="preco">R$ 79,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto10.png" alt="" />
-                    <h3>Cesta Familiar</h3>
-                    <p class="preco">R$ 99,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto11.png" alt="" />
-                    <h3>Cesta Deluxe</h3>
-                    <p class="preco">R$ 119,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto12.png" alt="" />
-                    <h3>Cesta de Luxo</h3>
-                    <p class="preco">R$ 139,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto13.png" alt="" />
-                    <h3>Caixa Presente</h3>
-                    <p class="preco">R$ 59,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto14.png" alt="" />
-                    <h3>Caixa Gourmet</h3>
-                    <p class="preco">R$ 69,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto15.png" alt="" />
-                    <h3>Caixa Amor</h3>
-                    <p class="preco">R$ 64,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto16.png" alt="" />
-                    <h3>Caixa Celebration</h3>
-                    <p class="preco">R$ 74,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto17.png" alt="" />
-                    <h3>Ovo de Morango</h3>
-                    <p class="preco">R$ 48,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto18.png" alt="" />
-                    <h3>Ovo de Coco</h3>
-                    <p class="preco">R$ 47,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto19.png" alt="" />
-                    <h3>Ovo Caramelo</h3>
-                    <p class="preco">R$ 49,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
-
-                <article class="produto">
-                    <img class="img-produto" src="img/Produto20.png" alt="" />
-                    <h3>Ovo Brigadeiro</h3>
-                    <p class="preco">R$ 54,90</p>
-                    <button class="adicionar-carrinho">Adicionar</button>
-                </article>
             </div>
         </section>
     </main>
@@ -200,7 +81,7 @@
                     </div>
                 </div>
                 <div class="secao-rodape">
-                    <h4>Links Úteis</h4>
+                    <h4>Links</h4>
                     <ul>
                         <li><a href="#">Sobre Nós</a></li>
                         <li><a href="#">Produtos</a></li>
